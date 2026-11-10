@@ -1,0 +1,149 @@
+:root {
+  --papel: #E9EEF1;
+  --tinta: #101B26;
+  --noche: #0D1823;
+  --senal: #5CF2D6;
+  --azul: #2B3BFF;
+  --gris: #51606E;
+  --linea: #C4CFD6;
+  --ancho: 68rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .brand, nav, .kicker, th, caption {
+  font-family: "Bricolage Grotesque", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--azul); }
+a:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+
+/* Barra superior */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: .5rem 2rem;
+  padding: .8rem 1.5rem;
+  background: var(--noche);
+}
+.brand { color: #fff; font-weight: 800; text-decoration: none; letter-spacing: .01em; }
+nav ul { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0; padding: 0; list-style: none; }
+nav a { color: #C9D6DF; text-decoration: none; font-size: .95rem; font-weight: 500; }
+nav a:hover, nav a:focus-visible { color: var(--senal); }
+
+/* Hero */
+.hero {
+  position: relative; overflow: hidden;
+  background: var(--noche); color: #fff;
+  padding: 6rem 1.5rem 5rem;
+}
+.wave {
+  position: absolute; inset: 50% 0 auto 0;
+  width: 100%; height: 14rem; transform: translateY(-20%);
+  opacity: .9;
+}
+.wave polyline {
+  fill: none; stroke: var(--senal); stroke-width: 2.5;
+  stroke-linejoin: round; stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.hero-text { position: relative; max-width: var(--ancho); margin: 0 auto; }
+.kicker { margin: 0 0 1rem; color: var(--senal); font-weight: 500; font-size: 1rem; }
+.hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(3.2rem, 11vw, 8rem);
+  line-height: .95; font-weight: 800; letter-spacing: -.03em;
+  text-shadow: 0 0 .6em var(--noche), 0 0 .3em var(--noche);
+}
+.lead { max-width: 36rem; font-size: 1.45rem; line-height: 1.5; margin: 0 0 1.5rem;
+  text-shadow: 0 0 .5em var(--noche), 0 0 .25em var(--noche); }
+.datos { max-width: 36rem; margin: 0; color: #B7C6D1; font-size: 1rem;
+  text-shadow: 0 0 .5em var(--noche); }
+
+/* Bloques */
+.bloque { padding: 4.5rem 1.5rem; max-width: var(--ancho); margin: 0 auto; }
+.bloque.oscuro, .bloque.claro-azul { max-width: none; }
+.bloque.oscuro > *, .bloque.claro-azul > * { max-width: var(--ancho); margin-left: auto; margin-right: auto; }
+
+.bloque h2 {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.1; font-weight: 800; letter-spacing: -.02em;
+  max-width: 40rem;
+}
+.sub { font-size: 1.4rem; margin: 3rem 0 1rem; }
+.intro { max-width: 42rem; margin-bottom: 2.5rem; }
+
+.dos-col { display: grid; grid-template-columns: 1.6fr 1fr; gap: 3rem; align-items: start; }
+.dos-col p { margin: 0 0 1.2rem; max-width: 40rem; }
+.nota { border-left: 5px solid var(--azul); padding: .5rem 0 .5rem 1.5rem; }
+.nota h3 { margin: 0 0 .5rem; font-size: 1.2rem; }
+.nota p { margin: 0; font-size: 1.05rem; }
+
+.beneficios { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--linea); }
+.beneficios li { padding: 1rem 0; border-bottom: 1px solid var(--linea); max-width: 46rem; }
+.beneficios strong { font-family: "Bricolage Grotesque", "Segoe UI", sans-serif; font-weight: 700; }
+
+/* Cómo funciona */
+.oscuro { background: var(--noche); color: #E6EEF3; }
+.oscuro h2 { color: #fff; }
+.tres-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-bottom: 3.5rem; }
+.tres-col h3 { margin: 0 0 .5rem; color: var(--senal); font-size: 1.35rem; }
+.tres-col p { margin: 0; font-size: 1.05rem; }
+
+.gestos { width: 100%; max-width: 46rem !important; border-collapse: collapse; margin-bottom: 2rem; }
+.gestos caption { text-align: left; font-weight: 700; padding-bottom: .75rem; color: #fff; }
+.gestos th, .gestos td { text-align: left; padding: .8rem 1rem .8rem 0; border-bottom: 1px solid #2A3B4A; }
+.gestos th { color: var(--senal); font-weight: 500; font-size: .95rem; }
+.ficha { color: #AFC0CC; font-size: 1rem; max-width: 46rem !important; }
+
+/* Línea temporal */
+.linea { list-style: none; margin: 0; padding: 0 0 0 2rem; border-left: 3px solid var(--linea); max-width: 46rem; }
+.linea li { position: relative; padding: 0 0 2rem 1rem; }
+.linea li::before {
+  content: ""; position: absolute; left: calc(-2rem - 9px); top: .55rem;
+  width: 15px; height: 15px; border-radius: 50%;
+  background: var(--papel); border: 3px solid var(--gris);
+}
+.linea h3 { margin: 0 0 .25rem; font-size: 1.25rem; }
+.linea p { margin: 0; font-size: 1.05rem; }
+.linea .actual::before { background: var(--azul); border-color: var(--azul); width: 19px; height: 19px; left: calc(-2rem - 11px); }
+.linea .actual h3 { color: var(--azul); font-size: 1.5rem; }
+.linea .actual { padding-bottom: 0; }
+
+/* Fotos */
+.fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 2rem; }
+.fotos figure { margin: 0; }
+.fotos img {
+  display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  background: var(--linea); color: var(--gris); font-size: .9rem;
+}
+.fotos figcaption { margin-top: .6rem; font-size: .95rem; color: var(--gris); line-height: 1.45; }
+
+/* Enlaces */
+.claro-azul { background: #D6DEFF; }
+.enlaces { list-style: none; margin: 0; padding: 0; }
+.enlaces li { padding: .9rem 0; border-bottom: 1px solid #A9B6F5; }
+.enlaces li:last-child { border-bottom: 0; }
+.enlaces a { font-family: "Bricolage Grotesque", "Segoe UI", sans-serif; font-weight: 700; font-size: 1.15rem; word-break: break-word; }
+
+footer { padding: 2rem 1.5rem; background: var(--noche); color: #9FB0BD; text-align: center; font-size: .9rem; }
+footer p { margin: 0 auto; max-width: 40rem; }
+
+/* Móvil */
+@media (max-width: 52rem) {
+  .dos-col, .tres-col { grid-template-columns: 1fr; gap: 1.75rem; }
+  .hero { padding: 4rem 1.25rem 3.5rem; }
+  .bloque { padding: 3rem 1.25rem; }
+  .topbar { position: static; }
+}
