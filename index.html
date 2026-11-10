@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mudra Link: controlar dispositivos con los nervios de la muñeca</title>
+  <meta name="description" content="Trabajo de Interacción Persona-Ordenador sobre Mudra Link, una pulsera neuronal con sensores SNC que convierte la intención de movimiento de los dedos en órdenes digitales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">IPO · Dispositivos</a>
+    <nav>
+      <ul>
+        <li><a href="#porque">Por qué</a></li>
+        <li><a href="#funcionamiento">Cómo funciona</a></li>
+        <li><a href="#evolucion">Evolución</a></li>
+        <li><a href="#galeria">Fotos</a></li>
+        <li><a href="#masinfo">Más información</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <svg class="wave" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-hidden="true">
+        <polyline points="0,120 60,118 110,124 150,116 190,122 230,60 255,190 280,40 305,205 330,80 360,150 390,112 440,122 500,118 560,121 610,119 650,100 670,160 690,70 715,175 740,95 770,130 800,118 860,122 920,117 980,123 1040,119 1090,121 1200,120" />
+      </svg>
+      <div class="hero-text">
+        <p class="kicker">Hardware de interacción persona-ordenador · Wearable Devices Ltd.</p>
+        <h1>Mudra Link</h1>
+        <p class="lead">Una pulsera que capta los impulsos nerviosos que viajan por la muñeca cuando queremos mover un dedo y los transforma en una orden de entrada: sin pantalla táctil, sin mando y sin cámara.</p>
+        <p class="datos">Lanzada en 2025 por la empresa israelí Wearable Devices · funciona con Android, iOS, Windows y macOS</p>
+      </div>
+    </section>
+
+    <!-- POR QUÉ -->
+    <section id="porque" class="bloque">
+      <h2>Por qué la he elegido</h2>
+      <div class="dos-col">
+        <div>
+          <p>Casi todos los dispositivos de entrada necesitan algo que tocar o algo que nos vea: teclas, un ratón, una pantalla, una cámara que siga las manos. Mudra Link rompe con esa lógica. En lugar de medir lo que la mano hace, mide la señal que el sistema nervioso envía a la mano para hacerlo.</p>
+          <p>Eso significa que la interacción empieza antes del movimiento: la intención motora se convierte en un evento digital. Los gestos pueden ser muy pequeños, casi imperceptibles, y se detectan aunque la mano esté en el bolsillo, debajo de la mesa o fuera del campo de visión de cualquier cámara.</p>
+        </div>
+        <aside class="nota">
+          <h3>Relación con la IPO</h3>
+          <p>Es un <strong>dispositivo de entrada</strong> que plantea una interfaz distinta a las tradicionales. Afecta a la usabilidad, la accesibilidad, la fatiga física y la privacidad social de la interacción, temas centrales de la asignatura.</p>
+        </aside>
+      </div>
+
+      <h3 class="sub">Beneficios para el usuario</h3>
+      <ul class="beneficios">
+        <li><strong>Sin cámaras ni pantallas.</strong> No depende de la luz ni de que las manos estén a la vista, y evita grabar imágenes del usuario.</li>
+        <li><strong>Gestos mínimos.</strong> Se pueden hacer con muy poco movimiento, lo que reduce el cansancio frente a los gestos amplios en el aire.</li>
+        <li><strong>Accesibilidad.</strong> Al leer la intención y no el movimiento completo, puede ayudar a personas con movilidad reducida en la mano, según plantea la propia empresa.</li>
+        <li><strong>Compatibilidad amplia.</strong> Se conecta por Bluetooth como si fuera un ratón corriente, por lo que puede usarse con teléfonos, ordenadores y gafas inteligentes sin instalar controladores.</li>
+        <li><strong>Sensibilidad a la presión.</strong> Distingue cuánta fuerza se hace con la yema del dedo, lo que añade una dimensión más al gesto.</li>
+      </ul>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="funcionamiento" class="bloque oscuro">
+      <h2>Cómo funciona</h2>
+      <div class="tres-col">
+        <article>
+          <h3>1. Capta</h3>
+          <p>Tres sensores de conductancia nerviosa de superficie (SNC), con electrodos de acero inoxidable, recogen la actividad de los nervios cubital, mediano y radial en la muñeca.</p>
+        </article>
+        <article>
+          <h3>2. Interpreta</h3>
+          <p>Unos algoritmos de inteligencia artificial reconocen qué gesto se pretende hacer. Además, un sensor de movimiento de seis ejes (acelerómetro y giroscopio) sigue los movimientos de la mano.</p>
+        </article>
+        <article>
+          <h3>3. Ordena</h3>
+          <p>La pulsera envía por Bluetooth una orden de entrada: puede actuar como cursor, como cruceta de direcciones o como selector.</p>
+        </article>
+      </div>
+
+      <table class="gestos">
+        <caption>Dos modos de interacción</caption>
+        <thead><tr><th>Modo</th><th>Cómo se usa</th></tr></thead>
+        <tbody>
+          <tr><td>Puntero</td><td>La orientación de la mano mueve el cursor y un gesto de pinza hace «clic».</td></tr>
+          <tr><td>Cruceta (D-pad)</td><td>Gestos con los dedos para moverse entre elementos: arriba, abajo, izquierda, derecha y seleccionar.</td></tr>
+          <tr><td>Presión</td><td>La fuerza del toque entre dedos se usa como valor continuo, por ejemplo para ajustar volumen.</td></tr>
+        </tbody>
+      </table>
+
+      <p class="ficha">Ficha rápida: 3 sensores SNC y sensor inercial de 6 ejes · conexión Bluetooth LE · unos 36 g, 22 mm de ancho · autonomía anunciada de hasta 2 días en los primeros datos y de hasta 8 horas de uso activo en los más recientes · carga completa en 80 minutos.</p>
+      <p class="ficha">Nota crítica: «SNC» es el nombre que da la empresa a su tecnología, muy cercana en la práctica a la electromiografía de superficie. Sus prestaciones proceden sobre todo del fabricante y de pruebas en ferias, por lo que conviene leerlas con cautela.</p>
+    </section>
+
+    <!-- EVOLUCIÓN -->
+    <section id="evolucion" class="bloque">
+      <h2>De dónde viene: evolución de los dispositivos de entrada</h2>
+      <p class="intro">Mudra Link no sustituye a un único aparato. Recoge la evolución de varias generaciones de dispositivos de entrada y mejora sus limitaciones.</p>
+
+      <ol class="linea">
+        <li>
+          <h3>Teclado</h3>
+          <p>Heredero de la máquina de escribir. Es preciso para escribir, pero exige una mesa y las dos manos.</p>
+        </li>
+        <li>
+          <h3>Ratón (años 60)</h3>
+          <p>Douglas Engelbart lo presentó en 1968 para señalar en pantalla. Hace falta una superficie plana y apoyar la mano.</p>
+        </li>
+        <li>
+          <h3>Pantalla táctil (años 2000)</h3>
+          <p>Se toca directamente lo que se ve. Obliga a sostener el dispositivo y el dedo tapa parte de la imagen.</p>
+        </li>
+        <li>
+          <h3>Mandos y cámaras de movimiento</h3>
+          <p>Wii Remote (2006) y Kinect (2010) incorporan el cuerpo a la interacción, pero con gestos amplios y visibles, y dependiendo de una cámara o de un mando en la mano.</p>
+        </li>
+        <li>
+          <h3>Relojes y pulseras inteligentes</h3>
+          <p>Llevan la interacción a la muñeca, pero con una pantalla diminuta que hay que mirar y tocar con la otra mano. La primera Mudra Band (para Apple Watch) añadió gestos con los dedos a ese reloj.</p>
+        </li>
+        <li>
+          <h3>Seguimiento de manos por cámara</h3>
+          <p>Visores de realidad mixta como HoloLens o Apple Vision Pro permiten señalar con los dedos, pero las manos deben estar a la vista y los gestos son relativamente grandes.</p>
+        </li>
+        <li>
+          <h3>Pulseras EMG pioneras</h3>
+          <p>El brazalete Myo (2014) fue de los primeros en leer la actividad muscular, aunque con pocos gestos y poca precisión. Abrió la vía que hoy siguen otras empresas, entre ellas Meta con su Neural Band.</p>
+        </li>
+        <li class="actual">
+          <h3>Mudra Link (2025)</h3>
+          <p>Sin cámara, sin superficie, con gestos pequeños y conexión estándar como ratón Bluetooth. Es una de las primeras pulseras de este tipo que cualquiera puede comprar y usar con dispositivos de distintas marcas.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="bloque">
+      <h2>Fotografías</h2>
+      <div class="fotos">
+        <figure>
+          <img src="imagenes/mudra-link.jpg" alt="Pulsera Mudra Link de tela gris vista desde el interior, con los sensores metálicos y los contactos de carga">
+          <figcaption>La pulsera Mudra Link: en el interior se ven los sensores que tocan la piel. Fuente: Wearable Devices.</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/mudra-band.jpg" alt="Mudra Band, correa negra para Apple Watch con sensores en la cara interior">
+          <figcaption>Mudra Band, el modelo anterior para Apple Watch. Fuente: Wearable Devices.</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/gesto-pinza.jpg" alt="Mano abierta con una pulsera Mudra en la muñeca y, a su derecha, la mano reproducida en un entorno digital">
+          <figcaption>La pulsera detecta la actividad de la mano y la reproduce en el entorno digital. Fuente: Wearable Devices.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MÁS INFORMACIÓN -->
+    <section id="masinfo" class="bloque claro-azul">
+      <h2>Dónde obtener más información</h2>
+      <ul class="enlaces">
+        <li><a href="https://www.mudra-band.com/">Mudra Band: web oficial de Wearable Devices</a></li>
+        <li><a href="https://uploadvr.com/mudra-link-is-a-200-meta-neural-wristband-alternative-for-any-device">UploadVR: Mudra Link como alternativa a la pulsera neuronal de Meta</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1887673/000121390024076721/ea021390601ex99-1_wearable.htm">Nota de prensa oficial de presentación de Mudra Link (septiembre de 2024)</a></li>
+        <li><a href="https://mixed-news.com/en/mudra-link-499-emg-wristband-bluetooth-hid-xreal-rokid/">MIXED: Mudra Link como ratón Bluetooth para gafas inteligentes</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Trabajo de Interacción Persona-Ordenador · Contenido redactado con fines académicos. Imágenes y marcas pertenecen a sus propietarios.</p>
+  </footer>
+
+</body>
+</html>
